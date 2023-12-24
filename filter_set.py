@@ -4,11 +4,6 @@ import numpy as np
 ds = deeplake.load("hub://activeloop/places205-train")
 
 
-import deeplake
-
-# Load the dataset
-#ds = deeplake.load("hub://activeloop/places205")
-
 # Select the first 20 classes
 classes_to_select = list(range(1, 11))  # Assuming classes are indexed from 1 to 205
 
