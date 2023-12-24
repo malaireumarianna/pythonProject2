@@ -1,14 +1,17 @@
 import deeplake
 import numpy as np
 
-ds = deeplake.load("hub://activeloop/places205-train")
+ds = deeplake.load("hub://activeloop/places205")
+
+# Load the test set
+test_ds = ds.test_split()
 
 
 # Select the first 20 classes
 classes_to_select = list(range(1, 11))  # Assuming classes are indexed from 1 to 205
 
 # Filter dataset to include only data for the first 20 classes
-filtered_ds = ds.filter(lambda x: x.labels.numpy() in classes_to_select, save_result = True, result_path = ".../filtered_places205.npz")
+filtered_ds = ds.filter(lambda x: x.labels.numpy() in classes_to_select, save_result = True, result_path ="filtered_places205.npz")
 
 
 
