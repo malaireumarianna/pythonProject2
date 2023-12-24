@@ -10,7 +10,7 @@ images = loaded_arrays['images']
 labels = loaded_arrays['labels']'''
 
 
-filtered_ds = deeplake.load(".../filtered_places205.npz")
+filtered_ds = deeplake.load("filtered_places205.npz")
 
 
 dataloader = filtered_ds.pytorch(num_workers = 2, shuffle = False, batch_size= 4)
