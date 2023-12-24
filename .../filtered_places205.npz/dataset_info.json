@@ -1,0 +1,12 @@
+{
+    "created_at": 1703427642.7479942,
+    "first-index-subscriptable": true,
+    "id": "d2ea91eb1f6d27f6a65388a49235275db3eee5f45579dfe37529c6cf6814741f",
+    "query": "filtered_ds = ds.filter(lambda x: x.labels.numpy() in classes_to_select, save_result = True, result_path = \".../filtered_places205.npz\")\n",
+    "samples_processed": 2469373,
+    "source-dataset": "hub://activeloop/places205",
+    "source-dataset-index": null,
+    "source-dataset-version": "firstdbf9474d461a19e9333c2fd19b46115348f",
+    "total_samples": 2469373,
+    "virtual-datasource": true
+}

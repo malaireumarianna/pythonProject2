@@ -1,0 +1,18 @@
+{
+    "default_index": [
+        {
+            "start": null,
+            "step": null,
+            "stop": null
+        }
+    ],
+    "groups": [],
+    "hidden_tensors": [],
+    "tensor_names": {
+        "VDS_INDEX": "VDS_INDEX"
+    },
+    "tensors": [
+        "VDS_INDEX"
+    ],
+    "version": "3.8.13"
+}
